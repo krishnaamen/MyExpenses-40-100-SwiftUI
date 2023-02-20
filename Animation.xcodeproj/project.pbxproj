@@ -60,8 +60,8 @@
 			children = (
 				B1FCFA30299F7E1A00EB658B /* AddItem.swift */,
 				B1D2CEBA299E209000482207 /* AnimationApp.swift */,
-				B1D2CEBC299E209000482207 /* ContentView.swift */,
 				B1FCFA2C299F739400EB658B /* ExpenseItem.swift */,
+				B1D2CEBC299E209000482207 /* ContentView.swift */,
 				B1FCFA2E299F758B00EB658B /* Expenses.swift */,
 				B1D2CEBE299E209300482207 /* Assets.xcassets */,
 				B1D2CEC0299E209300482207 /* Animation.entitlements */,

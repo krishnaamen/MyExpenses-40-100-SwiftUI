@@ -20,15 +20,22 @@ struct ContentView: View {
                 // in the foreach we can omit the value id because the struct expense item confirms
                 // identifiable protocol 
                 ForEach(expenses.items){ item in
-                    Text(item.name)
+                    HStack {
+                        VStack(alignment: .leading){
+                            Text(item.name)
+                                .font(.headline)
+                            Text(item.type)
+                        }
+                        Spacer()
+                        Text(item.amount,format:.currency(code: "DKK"))
+                    }
                 }
                 .onDelete(perform: removeItems)
             }
             .navigationTitle("MyExpenses")
             .toolbar {
                 Button {
-                    let expense = ExpenseItem(name: "Mobile Recharge", type: "Personal", amount: 100)
-                    expenses.items.append(expense)
+                   showingAddExpense = true
                 } label: {
                     Image(systemName: "plus")
                 }
